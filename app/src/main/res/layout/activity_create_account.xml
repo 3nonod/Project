@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createAccount">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inputName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="59dp"
+        android:text="الأسم"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="327dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <TextView
+        android:id="@+id/InputEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inputEmail"
+        android:layout_toEndOf="@+id/inputBirth"
+        android:text="البريد الألكتروني"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="85dp" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inputpass"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="42dp"
+        android:text="الرقم السري"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Phone"
+        android:layout_marginBottom="180dp"
+        android:text="الجنس"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <TextView
+        android:id="@+id/Birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inputBirth"
+        android:layout_alignEnd="@+id/password"
+        android:text="الميلاد"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <EditText
+        android:id="@+id/inputpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/inputEmail"
+        android:layout_marginTop="142dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="116dp" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/inputName"
+        android:layout_marginTop="97dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/password"
+        android:layout_alignTop="@+id/inputPhone"
+        android:text="رقم الجوال"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Create"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12sp" />
+
+    <RadioGroup
+        android:id="@+id/outputsex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="152dp"
+        android:layout_marginStart="112dp">
+
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="انثى"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ذكر"
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/inputPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/inputpass"
+        android:layout_marginTop="188dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/Create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginStart="100dp"
+        android:text="إنشاء الحساب" />
+
+    <EditText
+        android:id="@+id/inputBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="106dp"
+        android:layout_marginStart="66dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textSize="12sp" />
+
+</RelativeLayout>
